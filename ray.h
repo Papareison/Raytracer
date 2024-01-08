@@ -16,7 +16,7 @@ typedef struct color{
 
 typedef struct light{
     vector origin;
-    color color;
+    color light_color;
 }light;
 
-
+void ppm_write(char *filename, unsigned char *ppmdata, int vres, int hres);

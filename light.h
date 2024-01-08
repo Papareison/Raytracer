@@ -1,5 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "vector.h"
+#include "plane.h"
+#include "sphere.h"
 
-void ppm_write(char* filename, unsigned char *ppmdata, int vres, int hres);
+// Lighting of plane per ray
+color plane_lighting(light *light, ray *ray, plane_intersect *plane_intersect);
+
+// Lighting of sphere per ray
+color sphere_lighting(light *light, ray *ray, sphere *sph, double *param);

@@ -16,4 +16,5 @@ typedef struct plane_intersect{
    int flag; 
 }plane_intersect;
 
+// Check intersect of plane with a specific ray, vector line parameter for intersect is included in the returned struct
 plane_intersect check_plane_intersect(ray *ray, plane *plane);

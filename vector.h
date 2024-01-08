@@ -8,9 +8,9 @@ typedef struct vector{
     double z;
 }vector;
 
-vector add_vec(vector v1, vector v2);
-vector subtract_vec(vector v1, vector v2);
-vector scale_vec(vector v, double scalar);
-double dotP(vector v1, vector v2);
-double magnitude_vec(vector v);
+vector add_vec(vector *v1, vector *v2);
+vector subtract_vec(vector *v1, vector *v2);
+vector scale_vec(vector *v, double scalar);
+double dotP(vector *v1, vector *v2);
+double magnitude_vec(vector *v);
 
