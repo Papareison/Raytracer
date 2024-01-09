@@ -1,15 +1,14 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
-#include "vector.h"
-#include "ray.h"
 #include "sphere.h"
 
 int sphere_intersect(sphere *sphere, ray *ray, double *final_solution){
+
     double solution1, solution2;
     int flag = 0;
     vector temp;
-    
+
     // Solution is quadratic. These 3 variables are calculated before the final for legibility
     temp = subtract_vec(&ray->origin, &sphere->center);
     double dp = dotP(&ray->direction, &temp);

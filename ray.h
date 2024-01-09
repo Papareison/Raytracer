@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include "vector.h"
 
 typedef struct ray{
@@ -19,4 +16,5 @@ typedef struct light{
     color light_color;
 }light;
 
+// Writes the rgb values from the arg called ppmdata to a ppm file
 void ppm_write(char *filename, unsigned char *ppmdata, int vres, int hres);

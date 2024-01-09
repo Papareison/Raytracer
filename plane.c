@@ -1,11 +1,13 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include "plane.h"
-#include "vector.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#define EPSILON 0.000001
+
 #define EPSILON 0.000001
 
 plane_intersect check_plane_intersect(ray *ray, plane *plane){
+    
     plane_intersect check;
     vector temp;
 
@@ -29,6 +31,7 @@ plane_intersect check_plane_intersect(ray *ray, plane *plane){
             check.lambda = parameter;
         }
         else{
+
             check.flag = 0;
         }
     }

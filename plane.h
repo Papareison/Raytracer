@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include "vector.h"
 #include "ray.h"
 
 // Plane is defined as: ax + by + cz = D. a,b,c make up the normal vector.

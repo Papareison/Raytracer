@@ -1,8 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include "vector.h"
-#include "plane.h"
 #include "sphere.h"
 
 // Lighting of plane per ray
